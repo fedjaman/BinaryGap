@@ -15,12 +15,26 @@ import java.util.List;
  * @author fedja
  */
 public class Solution {
-
+    /*public int solution(int N){
+        String str = Integer.toBinaryString(N);
+        System.out.println(str);
+        str = str.replace("0", " ").trim();
+        String[] zeroGroups = str.split("1");
+                
+        if (zeroGroups.length == 0) return 0;
+        
+        int[] gaps = new int[zeroGroups.length];
+        for (int i = 0; i < zeroGroups.length; i++){
+            gaps[i] = zeroGroups[i].length();
+        }
+        Arrays.sort(gaps);        
+        return gaps[gaps.length-1];
+    } */
+    
     public int solution(int N){
         String NBinary = Integer.toBinaryString(N);
         System.out.println(NBinary);
-        
-        NBinary = NBinary.trim();
+        NBinary = NBinary.replace("0", " ").trim();
         String [] zeros = NBinary.split("1");
         int n = zeros.length;
         //System.out.println(n);
