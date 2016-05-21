@@ -17,7 +17,8 @@ public class BinaryGap {
     public static void main(String[] args) {
         // TODO code application logic here
         Solution mySolution = new Solution();
-        mySolution.solution(10);
+        System.out.println(mySolution.solution(12360));
+
     }
     
 }
